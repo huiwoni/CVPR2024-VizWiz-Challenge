@@ -6,7 +6,7 @@ To use the repository, we provide a conda environment.
 ```bash
 conda update conda
 conda env create -f environment.yaml
-conda activate Benchmark_TTA 
+conda activate vizwiz_TTA 
 ```
 
 ## Structure of Project
