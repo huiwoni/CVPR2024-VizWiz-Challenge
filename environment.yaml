@@ -1,4 +1,4 @@
-name: Benchmark_TTA
+name: vizwiz_TTA
 channels:
   - defaults
 dependencies:
