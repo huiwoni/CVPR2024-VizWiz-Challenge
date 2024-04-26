@@ -1,0 +1,22 @@
+CORRUPTION:
+  DATASET: challenge
+  SEVERITY:
+    - 5
+  TYPE:
+    - original
+MODEL:
+  ADAPTATION: tent_para
+  ARCH: resnet50_gn_para
+  ADAPTATION_TYPE: 'ttda'
+OPTIM:
+  BETA: 0.9
+  LR: 5e-5
+  METHOD: SGD
+  STEPS: 1
+  WD: 0.0
+TEST:
+  BATCH_SIZE: 64
+  EPOCH: 10
+SAR:
+  RESET_CONSTANT: 0.05
+
