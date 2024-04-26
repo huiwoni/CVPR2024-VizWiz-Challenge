@@ -6,7 +6,7 @@ CORRUPTION:
     - original
 MODEL:
   ADAPTATION: parallel_psedo_contrast
-  ARCH: convnext_base_para
+  ARCH: convnext_base_para_384
   ADAPTATION_TYPE: 'ttda'
   CONTRAST: 1
 OPTIM:
