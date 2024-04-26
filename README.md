@@ -6,7 +6,8 @@ To use the repository, we provide a conda environment.
 ```bash
 conda update conda
 conda env create -f environment.yaml
-conda activate vizwiz_TTA 
+conda activate vizwiz_TTA
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
 ```
 
 ## Structure of Project
