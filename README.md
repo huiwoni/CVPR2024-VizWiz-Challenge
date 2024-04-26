@@ -39,10 +39,4 @@ Specify the root folder for all datasets `_C.DATA_DIR = "./data"` in the file `c
 ## Acknowledgements
 
 + Robustbench [official](https://github.com/RobustBench/robustbench)
-+ CoTTA [official](https://github.com/qinenergy/cotta)
-+ TENT [official](https://github.com/DequanWang/tent)
-+ AdaContrast [official](https://github.com/DianCh/AdaContrast)
-+ EATA [official](https://github.com/mr-eggplant/EATA)
-+ LAME [official](https://github.com/fiveai/LAME)
-+ MEMO [official](https://github.com/zhangmarvin/memo)
 
