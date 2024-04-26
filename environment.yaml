@@ -53,7 +53,7 @@ dependencies:
     - gdown==4.7.1
     - geotorch==0.3.0
     - gpustat==1.1
-    - huggingface-hub==0.11.0rc0
+    - huggingface-hub==0.22.2
     - idna==2.10
     - imageio==2.27.0
     - importlib-metadata==6.1.0
@@ -139,7 +139,7 @@ dependencies:
     - stack-data==0.6.2
     - terminado==0.17.1
     - threadpoolctl==3.1.0
-    - timm==0.6.11
+    - timm==0.9.16
     - tinycss2==1.2.1
     - torchdiffeq==0.2.3
     - torchmetrics==0.9.3
