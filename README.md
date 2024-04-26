@@ -7,7 +7,7 @@ To use the repository, we provide a conda environment.
 conda update conda
 conda env create -f environment.yaml
 conda activate vizwiz_TTA
-conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
+pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
 ```
 
 ## Structure of Project
