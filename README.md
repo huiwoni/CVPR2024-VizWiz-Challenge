@@ -36,7 +36,7 @@ Specify the root folder for all datasets `_C.DATA_DIR = "./data"` in the file `c
 
 Train and test model
 
-    CUDA_VISIBLE_DEVICES=0,1,2,3 python challenge_test_time.py --cfg ./best_cfgs/Online_TTA/debug/parallel_psedo_contrast.yaml --output_dir ./test-time-evaluation/~
+    CUDA_VISIBLE_DEVICES=0,1,2,3 python challenge_test_time.py --cfg ./best_cfgs/parallel_psedo_contrast.yaml --output_dir ./test-time-evaluation/~
 
 The testing results and training logs will be saved in the `./output/test-time-evaluation/~`
 
