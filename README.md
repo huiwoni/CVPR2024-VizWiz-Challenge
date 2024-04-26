@@ -32,9 +32,9 @@ Specify the root folder for all datasets `_C.DATA_DIR = "./data"` in the file `c
 
 #### How to reproduce
 
-'''
-CUDA_VISIBLE_DEVICES=0,1,2,3 python challenge_test_time.py --cfg ./best_cfgs/Online_TTA/debug/parallel_psedo_contrast.yaml --output_dir ./output/test-time-evaluation/~
-'''
+
+    CUDA_VISIBLE_DEVICES=0,1,2,3 python challenge_test_time.py --cfg ./best_cfgs/Online_TTA/debug/parallel_psedo_contrast.yaml --output_dir ./output/test-time-evaluation/~
+
 
 ## Acknowledgements
 
