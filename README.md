@@ -1,5 +1,5 @@
 # [CVPR Vizwiz Challenge 2024]
-##Environments
+## Environments
 Ubuntu 18.04.6 LTS
 CUDA Version 11.3
 GPU: NVIDIA RTX A6000 with 48GB memory
