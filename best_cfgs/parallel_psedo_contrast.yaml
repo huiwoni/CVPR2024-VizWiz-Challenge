@@ -8,7 +8,7 @@ MODEL:
   ADAPTATION: parallel_psedo_contrast
   ARCH: convnext_base_para_384
   ADAPTATION_TYPE: 'ttda'
-  CONTRAST: 1
+  CONTRAST: 3
 OPTIM:
   METHOD: SGD
   STEPS: 1
