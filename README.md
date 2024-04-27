@@ -31,7 +31,14 @@ This project contains several directories. Their roles are listed as follows:
 ### Get Started
 
 Specify the root folder for all datasets `_C.DATA_DIR = "./data"` in the file `conf.py`. 
+Please change the number of contrasts in ./best_sfgs/parallel_psedo_contrast.yaml.
 
+|contrasts(aug)|Accuracy|
+|------|---|
+|1|65.21|
+|3|65.33|
+|7|-|
+|16|65.55|
 #### How to reproduce
 
 Train and test model
