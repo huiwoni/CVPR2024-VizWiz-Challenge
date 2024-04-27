@@ -28,7 +28,7 @@ This project contains several directories. Their roles are listed as follows:
   	                              |-- vizwiz
 
   
-### Get Started
+## Get Started
 
 Specify the root folder for all datasets `_C.DATA_DIR = "./data"` in the file `conf.py`.
 
@@ -43,7 +43,7 @@ The corresponding accuracy is as shown in the table below:
 |7|-|
 |16|65.55|
 
-#### How to reproduce
+### How to reproduce
 
 Train and test model
 
