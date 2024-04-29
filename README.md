@@ -46,7 +46,6 @@ The corresponding accuracy is as shown in the table below:
 |1|65.21|
 |3|65.33|
 |7|65.53|
-|16|65.55|
 
 ### How to reproduce
 
