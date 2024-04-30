@@ -57,5 +57,4 @@ The testing results and training logs will be saved in the `./output/test-time-e
 
 ## Acknowledgements
 
-+ Robustbench [official](https://github.com/RobustBench/robustbench)
 
