@@ -41,7 +41,7 @@ Specify the root folder for all datasets `_C.DATA_DIR = "./datasets"` in the fil
 
 Please change the number of contrasts in ./best_sfgs/parallel_psedo_contrast.yaml.
 
-### How to reproduce
+## How to reproduce
 
 Train and test model
 
