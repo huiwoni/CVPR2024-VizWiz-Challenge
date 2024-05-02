@@ -17,7 +17,8 @@ pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --e
 
 ## Structure of Project
 
-This project contains several directories. Their roles are listed as follows:
+This project contains several directories.
+
 Please note that the dataset is 8900 images.
 
 + ./best_cfgs: the best config files for each dataset and algorithm are saved here.
@@ -36,7 +37,7 @@ Please note that the dataset is 8900 images.
   
 ## Get Started
 
-Specify the root folder for all datasets `_C.DATA_DIR = "./data"` in the file `conf.py`.
+Specify the root folder for all datasets `_C.DATA_DIR = "./datasets"` in the file `conf.py`.
 
 Please change the number of contrasts in ./best_sfgs/parallel_psedo_contrast.yaml.
 
