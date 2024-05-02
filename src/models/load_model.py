@@ -119,7 +119,19 @@ def load_model(model_name, checkpoint_dir=None, domain=None, para_scale=0.1):
                 model = torch.nn.DataParallel(model)
                 model.to(device)
     ################################################################################################################## elif end
+    
+    elif model_name == 'convnext_clip_para':
+        ######################################################################################## elif start
+        device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        model_args = dict(depths=[3, 4, 30, 3], dims=[384, 768, 1536, 3072], norm_eps=1e-5)
+        model = ConvNeXt_para(3, 1000, **dict(model_args))
 
+        model_load = timm.create_model('convnext_xxlarge.clip_laion2b_soup_ft_in1k', pretrained=True)
+        model_state = deepcopy(model_load.state_dict())
+
+        model.load_state_dict(model_state, strict=False)
+    ########################################################################################### elif end
+    
     else:
         raise ValueError('Unknown model name')
 
