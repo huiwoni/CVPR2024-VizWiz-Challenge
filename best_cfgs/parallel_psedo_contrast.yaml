@@ -4,11 +4,12 @@ CORRUPTION:
     - 5
   TYPE:
     - original
+ANNOTATION_PATH: ./datasets/annotations.json
 MODEL:
   ADAPTATION: parallel_psedo_contrast
-  ARCH: convnext_base_para_384
+  ARCH: convnext_clip_para
   ADAPTATION_TYPE: 'ttda'
-  CONTRAST: 3
+  CONTRAST: 7
 OPTIM:
   METHOD: SGD
   STEPS: 1
@@ -22,5 +23,5 @@ COTTA:
   AP: 0.05
 TEST:
   BATCH_SIZE: 64
-  EPOCH: 25
+  EPOCH: 20
   USEMEMORY: 10
