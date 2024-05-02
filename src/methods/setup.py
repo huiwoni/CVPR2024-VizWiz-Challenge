@@ -84,15 +84,13 @@ def setup_parallel_psedo(model, cfg, num_classes):
     optimizer = setup_optimizer(params, cfg)
 
     if cfg.MODEL.ARCH == "convnextv2_huge_para":
-        # ema_model = timm.create_model('convnext_xlarge.fb_in22k_ft_in1k_384', pretrained=True)
         ema_model = timm.create_model('convnextv2_huge.fcmae_ft_in22k_in1k_384', pretrained=True)
     elif cfg.MODEL.ARCH == "convnext_base_para_384":
-        # ema_model = timm.create_model('convnextv2_huge.fcmae_ft_in22k_in1k_384', pretrained=True)
         ema_model = timm.create_model('convnext_xlarge.fb_in22k_ft_in1k_384', pretrained=True)
     elif cfg.MODEL.ARCH == "convnext_base_para":
         ema_model = timm.create_model('convnext_base.fb_in22k_ft_in1k', pretrained=True)
-    elif cfg.MODEL.ARCH == "volo_para":
-        ema_model = timm.create_model('volo_d5_224.sail_in1k', pretrained=True)
+    elif cfg.MODEL.ARCH == "convnext_clip_para":
+        ema_model = timm.create_model('convnext_xxlarge.clip_laion2b_soup_ft_in1k', pretrained=True)
 
     if torch.cuda.is_available():
         if torch.cuda.device_count() > 1:
@@ -134,15 +132,13 @@ def setup_parallel_psedo_contrast(model, cfg, num_classes):
     optimizer = setup_optimizer(params, cfg)
 
     if cfg.MODEL.ARCH == "convnextv2_huge_para":
-        # ema_model = timm.create_model('convnext_xlarge.fb_in22k_ft_in1k_384', pretrained=True)
         ema_model = timm.create_model('convnextv2_huge.fcmae_ft_in22k_in1k_384', pretrained=True)
     elif cfg.MODEL.ARCH == "convnext_base_para_384":
-        # ema_model = timm.create_model('convnextv2_huge.fcmae_ft_in22k_in1k_384', pretrained=True)
         ema_model = timm.create_model('convnext_xlarge.fb_in22k_ft_in1k_384', pretrained=True)
     elif cfg.MODEL.ARCH == "convnext_base_para":
         ema_model = timm.create_model('convnext_base.fb_in22k_ft_in1k', pretrained=True)
-    elif cfg.MODEL.ARCH == "volo_para":
-        ema_model = timm.create_model('volo_d5_224.sail_in1k', pretrained=True)
+    elif cfg.MODEL.ARCH == "convnext_clip_para":
+        ema_model = timm.create_model('convnext_xxlarge.clip_laion2b_soup_ft_in1k', pretrained=True)
 
     if torch.cuda.is_available():
         if torch.cuda.device_count() > 1:
