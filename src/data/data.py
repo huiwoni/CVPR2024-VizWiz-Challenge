@@ -58,7 +58,16 @@ def get_transform(dataset_name, adaptation, num_augment=1, model_arch = None):
             normalize
         ])
     ############################################################### elif end
-
+  
+    elif model_arch == 'convnext_clip_para':
+    ################################################################ elif start
+        transform = transforms.Compose([
+            transforms.Resize((256, 256)),
+            transforms.ToTensor(),
+            normalize
+        ])
+    ############################################################### elif end
+  
     else:
     ##################################################### elif start
         transform = transforms.Compose([
